@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visayas</title>
+    <link rel="stylesheet" href="Assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+    @media screen and (max-width:850px) {
+        .grid-plan:nth-child(2){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(3){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(4){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(5){
+            grid-column: 1/5;
+        }
+        .grids{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .grid-inner-content{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        #package{
+            width: 50%;
+            height: 100%;
+        }
+        #img1{
+            height: 250px; 
+        }
+        .c-container-plan a{
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
+</head>
+<body style="background-image: url(https://gttp.imgix.net/311074/x/0/);">
+     <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-md-3" id="navigation">
+        <div class="container">
+          <a class="navbar-brand" href="#">Travel and Tours PH</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-menu-button"></span>
+          </button>
+          <!-- collapse -->
+          <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link link-light" aria-current="page" href="#">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link link-light" href="#">Destination</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destination
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Luzon</a></li>
+                  <li><a class="dropdown-item" href="#">Visayas</a></li>
+                  <li><a class="dropdown-item" href="#">Mindanao</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Island Tour</a></li>
+                  <li><a class="dropdown-item" href="#">Activities</a></li>
+                  <li><a class="dropdown-item" href="#">Accomodations</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+            <!-- plan activities cards -->
+    <div class="container-md">
+        <h4>Plan Your Next Activities</h4>
+    </div>
+    <div class="container-md c-container-plan">
+        <!-- nth:child 1 -->
+        <a href="" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grids">
+                        <td>
+                            <img src="Assets/images/grids/img1.jpg" alt="" id="img1"/>
+                        </td>
+                        <td class="p-5">
+                            <h5>Choose the best places for your next trip</h5>
+                            <p>Browse our platform of over 100 places and find the best event space for your needs.</p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+        <!-- nth:child 2 / hiking-->
+        <a href="#" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grid-inner-content">
+                        <td>
+                            <img src="https://www.google.com/search?q=Chocolate+Hills+%28Bohol%29&tbm=isch&chips=q:chocolate+hills+bohol,g_1:beautiful:zlk0KjrFlvo%3D&hl=en&sa=X&ved=2ahUKEwjw5bzr5cH9AhWOe94KHfO7AsEQ4lYoBHoECAEQLg&biw=1263&bih=613" alt="" id="img1" />
+                        </td>
+                        <td class="p-3">
+                            <h5>Chocolate Hills (Bohol) </h5>
+                            <p>The island province of Bohol in the Philippines may be smaller than its Visayan neighbors Cebu and Negros which are home to some of the top tourist spots in Visayas and most beautiful islands in the Philippines, but it doesn't fall short of stunning sights and activities, such as its famous Chocolate Hills. /p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+        <!-- nth:child 3 / surfing -->
+        <a href="" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grid-inner-content">
+                        <td>
+                            <img src="https://www.google.com/search?q=The+Ruins+(Negros+Occidental)&sxsrf=AJOqlzV4gv_5MRp0Bo5JoSxuVp3FVrLcKg:1677916856443&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiTlsOx58H9AhUEPXAKHSsUApIQ_AUoAnoECAEQBA&biw=1280&bih=613&dpr=1.5" alt="" id="img1"/>
+                        </td>
+                        <td class="p-3">
+                            <h5>The Ruins (Negros Occidental)</h5>
+                            <p> The Ruins Mansion is the remains of an ancestral home built in 1920 by a wealthy sugar baron named Don Mariano Ledesma Lacson. Don Mariano constructed the mansion as a testament of his love for his Portuguese wife, Cora Maria Osorio Rosa-Braga, after she passed away in 1911. Maria, who was pregnant with their eleventh child at the time, lost her and their baby’s lives after figuring in an accident. </p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+        <!-- nth:child 4 / diving-->
+        <a href="" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grid-inner-content">
+                        <td>
+                            <img src="https://www.google.com/search?q=Biri+Island+(Samar)&tbm=isch&ved=2ahUKEwiv8pjN58H9AhWOAN4KHeIUB1MQ2-cCegQIABAA&oq=Biri+Island+(Samar)&gs_lcp=CgNpbWcQAzIECAAQHjIGCAAQCBAeOgQIIxAnUKqaEliqmhJg9aESaAJwAHgAgAG8AYgB3AOSAQMwLjOYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=8voCZK-xHI6B-AbiqZyYBQ&bih=613&biw=1280" alt="" id="img1"/>
+                        </td>
+                        <td class="p-3">
+                            <h5>Biri Island (Samar)</h5>
+                            <p> Like a lost planet right here on the earth, Biri Island’s amazing natural rock formations will astound you. The island’s dramatic landscape carved by the fury of Mother Nature are as beautiful as they are surreal. These gigantic limestone rock formations were formed by pounding winds, raging storms and ruthless waves that battered the coast. If there’s one iconic place you need to visit in Northern Samar, Biri Island would be your best bet.
+
+ </p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+        <!-- nth:child 5 / kayaking-->
+        <a href="" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grid-inner-content">
+                        <td>
+                            <img src="https://www.google.com/search?q=Islas+de+Gigantes+(Iloilo)&hl=en&sxsrf=AJOqlzU4gvGdC3jcMcqC2UWP7WG1h-0juA:1677917653986&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjMo-mt6sH9AhXU_WEKHR0aCMAQ_AUoAXoECAEQAw&biw=1280&bih=613&dpr=1.5" alt="" id="img1"/>
+                        </td>
+                        <td class="p-3">
+                            <h5>Islas de Gigantes (Iloilo)</h5>
+                            <p>In Iloilo's Islas de Gigantes, you'll visit secluded white-sand beaches, stunning rock formations, and long stretches of sandbars. Also known as Gigantes Islands, its name came from the local tales that bones of giant humans were found in one of the caves here, this Iloilo island hopping destination is also known for fresh but budget-friendly seafood.</p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+    </div><br><br><br>
+    
+    <div class="container-md">
+        <h4>Packages</h4>
+    </div>
+    <!-- packages -->
+    <div id="carousel-promo" class="carousel slide text-dark text-center container-md rounded">
+        <div class="carousel-inner bg-secondary-subtle rounded">
+            <!-- batanes -->
+            <div class="carousel-item active">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/promos/batanes-package.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Batanes Now!</h1>
+                                    <p>The Batanes group of islands is located at the northernmost tip of Philippine territory. It is known for its scenic waters and terrain and clean environment. Batanes is also recognized for the unique culture of the islands' first settlers, the Ivatans.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- biliran -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/promos/biliran-package.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Biliran Now!</h1>
+                                    <p>Biliran is an island province of Eastern Visayas on the western side of the region. It is bounded on the south by Caragara Bay, Samar Sea on the east, North by the Visayas Sea and the strait of Biliran on the West</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- boracay -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/promos/boracay-package.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Boracay Now!</h1>
+                                    <p>Boracay is a tropical island about an hour's flight from Metro Manila in the Philippines. It has superb long white sand beaches and is one of the country's most developed tourist destinations.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- baguio -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/promos/baguio-package.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Baguio Now!</h1>
+                                    <p>Baguio is a landlocked city located 250 kilometers north of Manila, in the heart of the province of Benguet. It has a land area of 57.5 km². It is known as the gateway to the Cordillera of the mountain provinces of Northern Philippines.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-promo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-promo" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div><br><br><br>
+
+    <div class="container-md">
+        <h4>Feedbacks</h4>
+    </div>
+
+        <!-- footer -->
+        <div class="d-flex justify-content-center align-items-center bg-dark text-center text-white">
+            <div class="p-3 ">
+                <h6>KodeGo BootCamp</h6>
+                <p class="text-info">Group-4</p>
+                <p>All rights 2023</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var nav = document.querySelector('nav');
+    
+            window.addEventListener('scroll', function(){
+                if(window.pageYOffset > 100){
+                    nav.classList.add('bg-dark','shadow');
+                } else{
+                    nav.classList.remove('bg-dark','shadow');
+                }
+            });
+        </script>
+    </body>
+    </html>
