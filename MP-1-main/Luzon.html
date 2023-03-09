@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luzon</title>
+    <link rel="stylesheet" href="Assets/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+    @media screen and (max-width:850px) {
+        .grid-plan:nth-child(2){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(3){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(4){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(5){
+            grid-column: 1/5;
+        }
+        .grids{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .grid-inner-content{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        #package{
+            width: 50%;
+            height: 100%;
+        }
+        #img1{
+            height: 250px; 
+        }
+        .c-container-plan a{
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
+</head>
+<body style="background-image: url(https://gttp.imgix.net/311074/x/0/);">
+     <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-md-3" id="navigation">
+        <div class="container">
+          <a class="navbar-brand" href="#">Travel and Tours PH</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-menu-button"></span>
+          </button>
+          <!-- collapse -->
+          <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link link-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link link-light" href="#">Destination</a>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destination
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Luzon.html">Luzon</a></li>
+                  <li><a class="dropdown-item" href="Visayas.html">Visayas</a></li>
+                  <li><a class="dropdown-item" href="#">Mindanao</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Island Tour</a></li>
+                  <li><a class="dropdown-item" href="#">Activities</a></li>
+                  <li><a class="dropdown-item" href="#">Accomodations</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">About</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+            <!-- plan activities cards -->
+    <div class="container-md">
+        <h4>Plan Your Next Activities</h4>
+    </div>
+    <div class="container-md c-container-plan">
+        <!-- nth:child 1 -->
+        <a href="" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grids">
+                        <td>
+                            <img src="Assets/images/grids/img1.jpg" alt="" id="img1"/>
+                        </td>
+                        <td class="p-5">
+                            <h5>Choose the best places for your next trip</h5>
+                            <p>Browse our platform of over 100 places and find the best event space for your needs.</p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+        <!-- nth:child 2 / hiking-->
+        <a href="#" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grid-inner-content">
+                        <td>
+                            <img src="./Assets/images/luzon/fort-santiago.jpg" alt="" id="img1" />
+                        </td>
+                        <td class="p-3">
+                            <h5>Fort Santiago </h5>
+                            <p>Fort Santiago is one of the oldest fortifications in Manila built by the Spaniards in 1571 from what was once a palisaded structure of logs and earth built by Rajah Soliman on the native settlement called Maynila. The colonizers recognized that the tongue of land where the Pasig River flowed into the Manila Bay was a very strategic location. The fort was destroyed in 1574 during the Chinese attack led by Limahong.</p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+        <!-- nth:child 3 / surfing -->
+        <a href="" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grid-inner-content">
+                        <td>
+                            <img src="./Assets/images/luzon/baguio.jpg" alt="" id="img1"/>
+                        </td>
+                        <td class="p-3">
+                            <h5>Baguio</h5>
+                            <p> Baguio used to be a vast mountain zone with lush highland forests, teeming with various wildlife such as the indigenous deer, cloud rats, Philippine eagles, Philippine warty pigs, and numerous species of flora. The area was a hunting ground of the indigenous peoples, notably the Ibalois and other Igorot ethnic groups. When the Spanish arrived in the Philippines, the area was never fully subjugated by Spain due to the intensive defense tactics of the indigenous Igorots of the Cordilleras. </p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+        <!-- nth:child 4 / diving-->
+        <a href="" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grid-inner-content">
+                        <td>
+                            <img src="./Assets/images/luzon/vigan.jpeg" alt="" id="img1"/>
+                        </td>
+                        <td class="p-3">
+                            <h5>Vigan</h5>
+                            <p>Vigan is a city in the Philippines, on the west coast of Luzon island. It's known for its preserved Spanish colonial and Asian architecture. Calle Crisologo dominates the Mestizo district, with its cobblestone streets, malecón, horse-drawn carriages and rustic mansions. Near the white baroque Vigan Cathedral are Plaza Salcedo, offering fountain light shows, and Plaza Burgos, known for its street-food stalls.</p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+        <!-- nth:child 5 / kayaking-->
+        <a href="" class="btn grid-plan">
+            <table>
+                <tbody>
+                    <tr class="grid-inner-content">
+                        <td>
+                            <img src="./Assets/images/luzon/hundred-islands.jpg" alt="" id="img1"/>
+                        </td>
+                        <td class="p-3">
+                            <h5>Hundred Islands</h5>
+                            <p>The islands feature a coral reef foundation with the above ground cliffs being comprised of limestone.  Vegetation is plentiful and covers the majority of the islands in full.  Only some of the islands feature beaches and the level of the tide may determine if they are accessible or not.
+
+                                The majority of wildlife is accounted for by the species below the ocean waters or up in the sky.  Some of the bird species include grey-backed tailorbird, lemon-throated warbler, Philippine Bulbul, Philippine Coucal, Philippine duck, Philippine hawk-cuckoo, and the white-eared brown-dove.</p>
+                            <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </a>
+    </div><br><br><br>
+    
+    <div class="container-md">
+        <h4>Packages</h4>
+    </div>
+    <!-- packages -->
+    <div id="carousel-promo" class="carousel slide text-dark text-center container-md rounded">
+        <div class="carousel-inner bg-secondary-subtle rounded">
+            <!-- batanes -->
+            <div class="carousel-item active">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/promos/batanes-package.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Batanes Now!</h1>
+                                    <p>The Batanes group of islands is located at the northernmost tip of Philippine territory. It is known for its scenic waters and terrain and clean environment. Batanes is also recognized for the unique culture of the islands' first settlers, the Ivatans.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- biliran -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/promos/biliran-package.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Biliran Now!</h1>
+                                    <p>Biliran is an island province of Eastern Visayas on the western side of the region. It is bounded on the south by Caragara Bay, Samar Sea on the east, North by the Visayas Sea and the strait of Biliran on the West</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- boracay -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/promos/boracay-package.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Boracay Now!</h1>
+                                    <p>Boracay is a tropical island about an hour's flight from Metro Manila in the Philippines. It has superb long white sand beaches and is one of the country's most developed tourist destinations.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- baguio -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/promos/baguio-package.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Baguio Now!</h1>
+                                    <p>Baguio is a landlocked city located 250 kilometers north of Manila, in the heart of the province of Benguet. It has a land area of 57.5 km². It is known as the gateway to the Cordillera of the mountain provinces of Northern Philippines.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-promo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-promo" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div><br><br><br>
+
+    <div class="container-md">
+        <h4>Feedbacks</h4>
+    </div>
+
+        <!-- footer -->
+        <div class="d-flex justify-content-center align-items-center bg-dark text-center text-white">
+            <div class="p-3 ">
+                <h6>KodeGo BootCamp</h6>
+                <p class="text-info">Group-4</p>
+                <p>All rights 2023</p>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var nav = document.querySelector('nav');
+    
+            window.addEventListener('scroll', function(){
+                if(window.pageYOffset > 100){
+                    nav.classList.add('bg-dark','shadow');
+                } else{
+                    nav.classList.remove('bg-dark','shadow');
+                }
+            });
+        </script>
+    </body>
+    </html>
