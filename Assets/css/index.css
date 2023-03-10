@@ -1,3 +1,10 @@
+nav{
+    background-color: rgba(104, 101, 101, 0.493);
+}
+#n-btn{
+    background-color: #eaee05;
+}
+ 
 .carousel-item img{
     width: 100vw;
 }
@@ -8,7 +15,7 @@
 }  
 #img1{
     width:100%;
-    height: 220px;
+    height: 180px;
     border-radius:10px;
 }
 .c-container-plan{
@@ -31,6 +38,33 @@
     display: grid;
     grid-template-columns: 1fr;
 }
+.footer-ul{
+    list-style-type:none;
+}
+/* about */
+#img-about{
+    width: 100%;
+    border-radius: 10px;
+}
+.container-about{
+    background-color: #e9dfdf;
+    border-radius: 10px;
+}
+.p-about{
+    text-indent: 5%;
+}
+
+/* footer */
+#first-col{
+    margin: auto;
+}
+
+
+#fifth-col{
+    background-color:#686565 ;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* responsive css */
@@ -47,6 +81,7 @@
     .grid-plan:nth-child(5){
         grid-column: 1/5;
     }
+    /* for all tables */
     .grids{
         display: grid;
         grid-template-columns: 1fr;
