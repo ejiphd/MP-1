@@ -5,57 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel and Tours PH</title>
+    <!-- external css -->
     <link rel="stylesheet" href="Assets/css/index.css">
+    <!-- bootstrap css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 <body>
-     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-md-3" id="navigation">
-        <div class="container">
-          <a class="navbar-brand" href="#">Travel and Tours PH</a>
-          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="bi bi-menu-button"></span>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="Assets/images/TravelAndToursPH.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top rounded-3"/>
+            Travel and Tours PH
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <!-- collapse -->
-          <div class="collapse navbar-collapse " id="navbarSupportedContent" >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link link-light" aria-current="page" href="index.html">Home</a>
-              </li>         
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Destination
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Luzon.html">Luzon</a></li>
-                  <li><a class="dropdown-item" href="Visayas.html">Visayas</a></li>
-                  <li><a class="dropdown-item" href="mindanao.html">Mindanao</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Island Tour</a></li>
-                  <li><a class="dropdown-item" href="#">Activities</a></li>
-                  <li><a class="dropdown-item" href="#">Accomodations</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">About</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="#">Booking</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="#">Contact Us</a>
-              </li>
+          <!-- offcanvas -->
+          <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"><span class="bi bi-airplane"></span> Travel and Tours PH</h5>
+              <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="bi bi-x-lg text-white"></span></button>
+            </div>
+
+            <div class="offcanvas-body" >
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Destination
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Luzon</a></li>
+                      <li><a class="dropdown-item" href="#">Visayas</a></li>
+                      <li><a class="dropdown-item" href="#">Mindanao</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Island Tour</a></li>
+                      <li><a class="dropdown-item" href="#">Activities</a></li>
+                      <li><a class="dropdown-item" href="#">Accomodations</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">About</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
             </ul>
+            <a class="btn" id="n-btn" href="#">Book Now!</a>
+            </div>
           </div>
         </div>
-    </nav>
+      </nav>
+    
     <!-- carousel banner -->
     <div id="carousels" class="carousel slide bg-white" data-bs-ride="carousel">
         <!-- indicators -->
@@ -180,6 +194,29 @@
     </div><br><br><br>
     
     <div class="container-md">
+        <h4>About</h4>
+    </div>
+
+    <div class="container-md container-about">
+        <div class=" d-container-about">
+            <table>
+                <tbody>
+                    <tr class="grids">
+                        <td>
+                            <img src="Assets/images/banners/banner-2.jpg" alt="" id="img-about">
+                        </td>
+                        <td class="p-5">
+                            <h3 class="text-center">Travel and Tours PH</h3><br>
+                            <p class="p-about"> is <b><em>COMMITTED, COMPASSIONATE</em></b> and <b><em>COMPETENT</em></b> to provide overall satisfaction to our clients while fulfilling their travel requirements. Established in 2023, Travel and Tours PH. is a service travel, tour operator and destination management to cater the needs of travelers. We put <b>HIGH VALUE ON QUALITY</b> and attention to detail beyond clients expectation by continuous enhancement of knowledge in the travel industry.</p>
+                            <a class="btn" id="n-btn">Learn More!</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div><br><br><br>
+    <div class="container-md">
         <h4>Packages</h4>
     </div>
     <!-- packages -->
@@ -194,7 +231,7 @@
                                 <td>
                                     <img src="Assets/images/promos/batanes-package.jpg" alt="" id="package"/>
                                 </td>
-                                <td>
+                                <td><br>
                                     <h1>Visit Batanes Now!</h1>
                                     <p>The Batanes group of islands is located at the northernmost tip of Philippine territory. It is known for its scenic waters and terrain and clean environment. Batanes is also recognized for the unique culture of the islands' first settlers, the Ivatans.</p>
                                 </td>
@@ -212,7 +249,7 @@
                                 <td>
                                     <img src="Assets/images/promos/biliran-package.jpg" alt="" id="package"/>
                                 </td>
-                                <td>
+                                <td><br>
                                     <h1>Visit Biliran Now!</h1>
                                     <p>Biliran is an island province of Eastern Visayas on the western side of the region. It is bounded on the south by Caragara Bay, Samar Sea on the east, North by the Visayas Sea and the strait of Biliran on the West</p>
                                 </td>
@@ -230,7 +267,7 @@
                                 <td>
                                     <img src="Assets/images/promos/boracay-package.jpg" alt="" id="package"/>
                                 </td>
-                                <td>
+                                <td><br>
                                     <h1>Visit Boracay Now!</h1>
                                     <p>Boracay is a tropical island about an hour's flight from Metro Manila in the Philippines. It has superb long white sand beaches and is one of the country's most developed tourist destinations.</p>
                                 </td>
@@ -248,7 +285,7 @@
                                 <td>
                                     <img src="Assets/images/promos/baguio-package.jpg" alt="" id="package"/>
                                 </td>
-                                <td>
+                                <td><br>
                                     <h1>Visit Baguio Now!</h1>
                                     <p>Baguio is a landlocked city located 250 kilometers north of Manila, in the heart of the province of Benguet. It has a land area of 57.5 km². It is known as the gateway to the Cordillera of the mountain provinces of Northern Philippines.</p>
                                 </td>
@@ -268,16 +305,39 @@
           </button>
     </div><br><br><br>
 
-    <div class="container-md">
-        <h4>Feedbacks</h4>
-    </div>
+    
     
     <!-- footer -->
-    <div class="d-flex justify-content-center align-items-center bg-dark text-center text-white">
-        <div class="p-3 ">
-            <h6>KodeGo BootCamp</h6>
-            <p class="text-info">Group-4</p>
-            <p>All rights 2023</p>
+    <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-3 text-white justify-content-center align-items-center d-grid" id="first-col">
+                <img src="Assets/images/TravelAndToursPH.png" alt="Logo" width="90" height="90" class="rounded-4 ms-5">
+                <h5 class="">Travel and Tours PH</h5>
+            </div>
+            <div class="col-3 text-white p-5" id="second-col">
+                <h5><b>Browse</b></h5>
+                <p><a href="#" class=" text-white text-decoration-none">Destination</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">About</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Hotels</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Others</a></p>
+            </div>
+            <div class="col-3 text-white p-5" id="third-col">
+                <h5 ><b>Activities</b></h5>
+                <p><a href="#" class=" text-white text-decoration-none">Hiking</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Diving</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Surfing</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Kayaking</a></p>
+            </div>
+            <div class="col-3 text-white p-5" id="fourth-col"> 
+                <h5>Contact</h5>
+                <a href="#" class="text-white"><span class="bi bi-facebook "></span></a>
+                <a href="#" class="text-white"><span class="bi bi-messenger "></span></a>
+                <a href="#" class="text-white"><span class="bi bi-linkedin "></span></a>
+            </div>
+            <div class="col text-white" id="fifth-col">
+                <p><span>&#169;</span> Copyright 2023</p>
+                
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
