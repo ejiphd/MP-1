@@ -1,45 +1,61 @@
+/* navigation */
 nav{
-    background-color: rgba(104, 101, 101, 0.493);
+    background-color: rgba(25, 47, 68,0.493);
+}
+.nav-scrolled{ /*this applies on the js*/
+    background-color: rgb(25, 47, 68);
 }
 #n-btn{
-    background-color: #eaee05;
+    background-color: rgb(254, 235, 97);
 }
- 
-.carousel-item img{
-    width: 100vw;
+#offcanvasNavbar{
+    background-color: rgb(25, 47, 68);
+}
+/* .carousel-item img{
+    width: 100%;
+} */
+
+/* banner */
+#image{
+    width:100%;
 }
 #package{
     width: 350px;
     height:340px;
     border-radius: 10px;
-}  
+} 
+/* Activities */
 #img1{
     width:100%;
     height: 180px;
     border-radius:10px;
 }
-.c-container-plan{
+.view-places{
+    color: rgb(125, 173, 63);
+}
+.act-container-plan{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
 }
-.c-container-plan a{
+.act-container-plan a{
     background-color: rgb(236, 234, 234);
 }
-.c-container-plan a:hover{
+.act-container-plan a:hover{
     background-color: rgb(236, 234, 234);
     transform: scale(1.02);
     box-shadow: 0 0 10px #6e6e6e;
-}
-.grid-plan:nth-child(1){
-    grid-column: 1/5;
 }
 .grid-inner-content{
     display: grid;
     grid-template-columns: 1fr;
 }
-.footer-ul{
-    list-style-type:none;
+
+/* promos */
+
+.grid-promo-col img{
+    width: 100%;
+    padding: 10px;
 }
 /* about */
 #img-about{
@@ -58,10 +74,15 @@ nav{
 #first-col{
     margin: auto;
 }
-
+.footer-ul{
+    list-style-type:none;
+}
+.footer{
+    background-color:rgb(25, 47, 68);
+}
 
 #fifth-col{
-    background-color:#686565 ;
+    background-color: rgb(125, 173, 63);
     display: flex;
     justify-content: center;
 }
@@ -69,6 +90,9 @@ nav{
 
 /* responsive css */
 @media screen and (max-width:850px) {
+    .grid-plan:nth-child(1){
+        grid-column: 1/5;
+    }
     .grid-plan:nth-child(2){
         grid-column: 1/5;
     }
@@ -76,9 +100,6 @@ nav{
         grid-column: 1/5;
     }
     .grid-plan:nth-child(4){
-        grid-column: 1/5;
-    }
-    .grid-plan:nth-child(5){
         grid-column: 1/5;
     }
     /* for all tables */
@@ -102,3 +123,5 @@ nav{
         justify-content: center;
     }
 }
+
+/* promo responsiveness */
