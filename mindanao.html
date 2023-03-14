@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindanao</title>
+    <link rel="stylesheet" href="Assets/mindanao/mindanao.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+    /* footer */
+#first-col{
+    margin: auto;
+}
+
+
+#fifth-col{
+    background-color:#686565 ;
+    display: flex;
+    justify-content: center;
+}
+    @media screen and (max-width:850px) {
+        .grid-plan:nth-child(2){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(3){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(4){
+            grid-column: 1/5;
+        }
+        .grid-plan:nth-child(5){
+            grid-column: 1/5;
+        }
+        .grids{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .grid-inner-content{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        #package{
+            width: 50%;
+            height: 100%;
+        }
+        #img1{
+            height: 250px; 
+        }
+        .c-container-plan a{
+            display: flex;
+            justify-content: center;
+        }
+    }
+</style>
+</head>
+<body>
+     <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-md-3" id="navigation">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Travel and Tours PH</a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-menu-button"></span>
+          </button>
+          <!-- collapse -->
+          <div class="collapse navbar-collapse " id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link link-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Destination
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Luzon.html">Luzon</a></li>
+                  <li><a class="dropdown-item" href="Visayas.html">Visayas</a></li>
+                  <li><a class="dropdown-item" href="mindanao.html">Mindanao</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle link-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="island_hopping.html">Island Tour</a></li>
+                  <li><a class="dropdown-item" href="#">Activities</a></li>
+                  <li><a class="dropdown-item" href="#">Accomodations</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+            <!-- plan activities cards -->
+            <div>
+                <img src="Assets/mindanao/image/banner.jpg" alt="" id="image">
+            </div><br><br>
+        
+                    <!-- plan activities cards -->
+            <div class="container-md c-container-plan">
+                 <!-- nth:child 1 / Cloud 9 Surfing Tower (Siargao -->
+              <a href="#" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/mindanao/image/siargao_img.jpeg" alt="" id="img1" />
+                              </td>
+                              <td class="p-3">
+                                  <h5><b>Cloud 9 Surfing Tower (Siargao) </b></h5><hr>
+                                  <p>Cloud 9 - one of the most well-known waves world wide and one of the best in the Philippines, is a perfect barreling right hand reef break that can be both fun and challenging.  </p>
+                                  <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 2 / Hinatuan Enchanted River (Surigao del Sur)-->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/mindanao/image/surigao_Del_sur.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Hinatuan Enchanted River (Surigao del Sur) </b></h5><hr>
+                                  <p> The Hinatuan Enchanted River in Mindanao, Philippines, is a flawless saltwater river that flows into the Pacific Ocean.It is around 80-feet deep, and just barely long enough to be considered a river </p>
+                                  <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 3 / Whitewater Rafting (Cagayan de Oro) -->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/mindanao/image/cagayan_de_oro.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Whitewater Rafting (Cagayan de Oro) </b></h5><hr>
+                                  <p> Kick-off your adrenaline rush in CDO with whitewater rafting at the Cagayan River. The body of water spans as long as 48 kilometers over 59 rapids, and it’s sure to take you on a wild ride.</p>
+                                  <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 4 / Maria Cristina Falls-->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/mindanao/image/iligan_city.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Maria Cristina Falls <br>( Iligan City) </b></h5><hr>
+                                  <p>The Maria Cristina Falls is the second-highest waterfall in the Philippines, as is found in the suburbs of Iligan City on Mindanao Island. It’s the star landmark known as ‘the City of Majestic Waterfalls’. </p>
+                                  <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+          </div><br>
+          <div class="container-md c-container-plan">
+        
+        <!-- nth:child 5 / Mount Apo -->
+            <a href="#" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/mindanao/image/mt_apo.jpg" alt="" id="img1" />
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Mount Apo <br>(Island of Mindanao) </b></h5><hr>
+                                <p> Mount Apo, also known locally as Apo Sandawa, is a large solfataric, dormant stratovolcano on the island of Mindanao, Philippines. </p>
+                                <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 6 / Tinago Falls -->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/mindanao/image/tinago_falls.jpg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Tinago Falls <br>(Iligan City) </b></h5><hr>
+                                <p> A getaway deep within the jungles of Mindanao. Tucked within a forest-fringed ravine, this  waterfall’s name fittingly means “one that is hidden.”</p>
+                                <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 7 / Tinuy-an Falls -->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/mindanao/image/tinuy_an_falls.jpg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Tinuy-an Falls <br>(Bislig) </b></h5><hr>
+                                <p> Sometimes known as the little Niagara Falls of the Philippines. The falls measure 95 meters (312 feet) wide and 55 meters (180 feet) tall.  </p>
+                                <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 8 /  Lake Sebu (Cotabato)-->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/island_hopping/images/Camiguin.jpg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Lake Sebu <br> (Cotabato) </b></h5><hr>
+                                <p>According to UNESCO, a landscape is a geographical area that had successfully combined the works of nature and that of man.</p>
+                                <p class="text-danger">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div><br>
+    
+    <!-- packages -->
+    <div id="carousel-promo" class="carousel slide text-dark text-center container-md rounded">
+        <div class="carousel-inner bg-secondary-subtle rounded">
+            <!-- Siargao -->
+            <div class="carousel-item active">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/mindanao/image/promo_siargao.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Siargao Now!</h1>
+                                    <p>Siargao is a tear-drop shaped island in the Philippine Sea situated 800 kilometers southeast of Manila in the province of Surigao del Norte.One of the best known surfing waves on Siargao and the Philippines, with a worldwide reputation for thick, hollow tubes is "Cloud 9".</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Surigao del Sur -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/mindanao/image/promo_surigao_del_sur.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Surigao del Sur Now!</h1>
+                                    <p>The City of Surigao nestles along the northernmost tip of the Province of Surigao del Norte where mountains and hills are prominent indentions throughout the coast. It is bounded on the north and east by the Hinatuan Passage, on the west by the Surigao Strait, and on the south by Tagana-an.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Cagayan de Oro -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/mindanao/image/promo_cagayan_de_oro.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Cagayan de Oro Now!</h1>
+                                    <p>The origin of the name “Cagayan” came from the Malayo-Polynesian word “ag” which means water. “Kagay”, where the word ag is present means river, and Kagayan means “a place with a river.” While “de Oro” came from the Spanish word “Golden”.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Iligan City -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/mindanao/image/promo_iligan_city.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Iligan City Now!</h1>
+                                    <p>Iligan City had its beginnings in the village of Bayug, four (4) kilometers north of the present Poblacion. It was the earliest pre-Spanish settlement of native sea dwellers. The monotony of indigenous life in the territory was broken when in the later part of the 16th century, the inhabitants were subdued by the Visayan migrants from the island kingdom of Panglao.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-promo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-promo" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div><br><br><br>
+
+        <!-- footer -->
+        <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-3 text-white justify-content-center align-items-center d-grid" id="first-col">
+                <img src="Assets/images/TravelAndToursPH.png" alt="Logo" width="90" height="90" class="rounded-4 ms-5">
+                <h5 class="">Travel and Tours PH</h5>
+            </div>
+            <div class="col-3 text-white p-5" id="second-col">
+                <h5><b>Browse</b></h5>
+                <p><a href="#" class=" text-white text-decoration-none">Destination</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">About</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Hotels</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Others</a></p>
+            </div>
+            <div class="col-3 text-white p-5" id="third-col">
+                <h5 ><b>Activities</b></h5>
+                <p><a href="#" class=" text-white text-decoration-none">Hiking</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Diving</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Surfing</a></p>
+                <p><a href="#" class=" text-white text-decoration-none">Kayaking</a></p>
+            </div>
+            <div class="col-3 text-white p-5" id="fourth-col"> 
+                <h5>Contact</h5>
+                <a href="#" class="text-white"><span class="bi bi-facebook "></span></a>
+                <a href="#" class="text-white"><span class="bi bi-messenger "></span></a>
+                <a href="#" class="text-white"><span class="bi bi-linkedin "></span></a>
+            </div>
+            <div class="col text-white" id="fifth-col">
+                <p><span>&#169;</span> Copyright 2023</p>
+                
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var nav = document.querySelector('nav');
+    
+            window.addEventListener('scroll', function(){
+                if(window.pageYOffset > 100){
+                    nav.classList.add('bg-dark','shadow');
+                } else{
+                    nav.classList.remove('bg-dark','shadow');
+                }
+            });
+        </script>
+    </body>
+    </html>
