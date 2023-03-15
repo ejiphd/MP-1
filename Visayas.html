@@ -15,51 +15,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
     <style>
-    /* navigation */
-    nav{
+   /* navigation */
+nav{
     background-color: rgba(25, 47, 68,0.493);
-    }
-    .nav-scrolled{ /*this applies on the js*/
-        background-color: rgb(25, 47, 68);
-    }
-    #n-btn{
-        background-color: rgb(254, 235, 97);
-    }
-    #offcanvasNavbar{
-        background-color: rgb(25, 47, 68);
-    }
-    #brand img{
-        width: 40px;
-    }    
-    /* banner */
-    #image{
-        width:100%;
-    } 
-    #img1{
-        width:100%;
-        height: 220px;
-        border-radius:10px;
-    }
-    .c-container-plan{
-        display:grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 10px;
-    }
-    .c-container-plan a{
-        background-color: rgb(236, 234, 234);
-    }
-    .c-container-plan a:hover{
-        background-color: rgb(236, 234, 234);
-        transform: scale(1.02);
-        box-shadow: 0 0 10px #6e6e6e;
-    }
-    .grid-inner-content{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+}
+.nav-scrolled{ /*this applies on the js*/
+    background-color: rgb(25, 47, 68);
+}
+#n-btn{
+    background-color: rgb(254, 235, 97);
+}
+#offcanvasNavbar{
+    background-color: rgb(25, 47, 68);
+}
+#brand img{
+    width: 40px;
+}
 
-    
-   /* footer */
+#package{
+    width: 350px;
+    height:340px;
+    border-radius: 10px;
+} 
+/* banner */
+#image{
+    width:100%;
+} 
+#img1{
+    width:100%;
+    height: 220px;
+    border-radius:10px;
+}
+.c-container-plan{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.c-container-plan a{
+    background-color: rgb(236, 234, 234);
+}
+.c-container-plan a:hover{
+    background-color: rgb(236, 234, 234);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #6e6e6e;
+}
+.grid-inner-content{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* footer */
 .footer{
     background-color:rgb(25, 47, 68);
 }
@@ -81,39 +86,173 @@
 }
 #first-grid h5{
     text-align: center;
-        @media screen and (max-width:850px) {
-            .grid-plan:nth-child(2){
-                grid-column: 1/5;
-            }
-            .grid-plan:nth-child(3){
-                grid-column: 1/5;
-            }
-            .grid-plan:nth-child(4){
-                grid-column: 1/5;
-            }
-            .grid-plan:nth-child(5){
-                grid-column: 1/5;
-            }
-            .grids{
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-            .grid-inner-content{
-                display: grid;
-                grid-template-columns: 1fr;
-            }
-            #package{
-                width: 50%;
-                height: 100%;
-            }
-            #img1{
-                height: 250px; 
-            }
-            .c-container-plan a{
-                display: flex;
-                justify-content: center;
-            }
-        }
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* responsive css */
+
+@media screen and (max-width:990px)
+{
+    #menu-logo
+    {
+        width:40px;
+    }
+     /* footer */
+     #first-grid img
+     {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #first-grid h5
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:555px) 
+{
+     /* navbar */
+     #brand img
+     {
+        width: 35px;
+    }
+    #menu-btn
+    {
+        border:none;
+    }
+    #menu-btn span
+    {
+        width: 25px;
+    }
+    
+    /* offcanvas menu */
+    #offcanvasNavbar
+    {
+        width: 300px;
+    }
+    #menu-logo
+    {
+        width:35px
+    }
+       /* footer */
+       #footer-grid
+       {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    #first-grid
+    {
+        width: auto;
+        margin-top: 15px;
+    }
+    #second-grid
+    {
+        width: auto;
+    }
+    #footer-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first-grid{
+        grid-column: 1/3;
+    }
+    #fourth-grid
+    {
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding-top: px;
+    }
+    #fifth-grid
+    {
+        grid-column: 1/3;
+    }
+}
+@media screen and (max-width:850px) 
+{
+    .grid-plan:nth-child(1)
+    {
+        grid-column: 1/5;
+    }
+    .grid-plan:nth-child(2)
+    {
+        grid-column: 1/5;
+    }
+    .grid-plan:nth-child(3)
+    {
+        grid-column: 1/5;
+    }
+    .grid-plan:nth-child(4)
+    {
+        grid-column: 1/5;
+    }
+    .grids
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid-inner-content
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #package
+    {
+        width: 50%;
+        height: 100%;
+    }
+    #img1
+    {
+        height: 250px; 
+    }
+    .c-container-plan a
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:430px) 
+{
+       /* navbar */
+    nav
+    {
+        height: 60px;
+        width: 100%;
+    }
+    #brand
+    {
+        font-size: 18px;
+    }
+    #brand img
+    {
+        width: 30px;
+    }
+    /* footer */
+    #footer-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first-grid
+    {
+        grid-column: 1/3;
+    }
+    #fourth-grid
+    {
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    #fifth-grid
+    {
+        grid-column: 1/3;
+    }
+}
+
     </style>
 
 </head>
@@ -122,7 +261,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
         <div class="container-fluid">
         <a class="navbar-brand" href="#" id="brand">
-            <img src="Assets/images/TravelAndToursPH.png" alt="Logo" class="d-inline-block align-text-top rounded-3"/>
+            <img src="Assets/island_hopping/images/TravelAndToursPH.png" alt="Logo" class="d-inline-block align-text-top rounded-3"/>
             Travel and Tours PH
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" id="menu-btn">
@@ -139,7 +278,7 @@
             <div class="offcanvas-body" >
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-lg-center">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -171,15 +310,15 @@
                     <a class="nav-link" href="#footer">Contact Us</a>
                 </li>
             </ul>
-            <a class="btn" id="n-btn" href="#" data-bs-toggle="modal" data-bs-target="#HomeModal">Book Now!</a>
             </div>
           </div>
         </div>
       </nav>
 
+     
             <!-- plan activities cards -->
             <div>
-                <img src="Assets/image/VISAYAS BANNER.jpg" alt="" id="image">
+                <img src="Assets/images/VISAYAS BANNER.jpg" alt="" id="image">
             </div><br><br>
         
                     <!-- plan activities cards -->
