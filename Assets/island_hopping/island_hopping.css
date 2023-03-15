@@ -1,5 +1,8 @@
 
 /* banner */
+#brand img{
+    width: 40px;
+}
 #image{
     width:100%;
 } 
