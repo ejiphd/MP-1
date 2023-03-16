@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+}
+/* navigation */
+nav{
+    background-color: rgba(25, 47, 68,0.493);
+}
+.nav-scrolled{ /*this applies on the js*/
+    background-color: rgb(25, 47, 68);
+}
+#n-btn{
+    background-color: rgb(254, 235, 97);
+}
+#offcanvasNavbar{
+    background-color: rgb(25, 47, 68);
+}
+#brand img{
+    width: 40px;
+}
+
+
+/* banner */
+#image{
+    width:100%;
+} 
+/* footer */
+.footer{
+    background-color:rgb(25, 47, 68);
+}
+#first-grid{
+    margin: auto;
+}
+#fourth-grid{
+    padding-top: 47px;
+}
+#fifth-grid{
+    background-color: rgb(125, 173, 63);
+    display: flex;
+    justify-content: center;
+}
+#first-grid img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#first-grid h5{
+    text-align: center;
+}
+/* ------------------------------------------------------------------------------------------------------------------------- */
+/* responsive css */
+@media screen and (max-width:990px)
+{
+    #menu-logo
+    {
+        width:40px;
+    }
+     /* footer */
+     #first-grid img
+     {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #first-grid h5
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:555px) 
+{
+     /* navbar */
+     #brand img
+     {
+        width: 35px;
+    }
+    #menu-btn
+    {
+        border:none;
+    }
+    #menu-btn span
+    {
+        width: 25px;
+    }
+    
+    /* offcanvas menu */
+    #offcanvasNavbar
+    {
+        width: 300px;
+    }
+    #menu-logo
+    {
+        width:35px
+    }
+       /* footer */
+       #footer-grid
+       {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    #first-grid
+    {
+        width: auto;
+        margin-top: 15px;
+    }
+    #second-grid
+    {
+        width: auto;
+    }
+    #footer-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first-grid{
+        grid-column: 1/3;
+    }
+    #fourth-grid
+    {
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding-top: px;
+    }
+    #fifth-grid
+    {
+        grid-column: 1/3;
+    }
+}
+@media screen and (max-width:430px) 
+{
+       /* navbar */
+       nav{
+        height: 60px;
+        width: 100%;
+    }
+    #brand{
+        font-size: 18px;
+    }
+    #brand img{
+        width: 30px;
+    }
+    /* footer */
+    #footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first-grid{
+        grid-column: 1/3;
+    }
+    #fourth-grid{
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    #fifth-grid{
+        grid-column: 1/3;
+    }
+}
