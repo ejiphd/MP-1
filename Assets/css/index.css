@@ -294,7 +294,11 @@ nav{
         grid-template-columns: 1fr;
     }
     
-    /* footer */
+    /* about */
+    #about{
+        text-align: center;
+        width: 100vw;
+    }
     /* footer */
     #footer-grid
     {
