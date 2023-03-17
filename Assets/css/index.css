@@ -297,7 +297,8 @@ nav{
     
     /* about */
     #about{
-       width: 70vw; 
+       width: 100vw;
+       align-content: center;
     }
     #about h1{
         margin-top: 5px;
