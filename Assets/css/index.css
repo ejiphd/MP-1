@@ -296,8 +296,13 @@ nav{
     
     /* about */
     #about{
+       width: 100vw; 
+    }
+    #about h1{
         text-align: center;
-        width: 100vw;
+    }
+    #about p{
+        text-align: justify;
     }
     /* footer */
     #footer-grid
