@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luzon</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- fontawesome-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+   /* navigation */
+nav{
+    background-color: rgba(25, 47, 68,0.493);
+}
+.nav-scrolled{ /*this applies on the js*/
+    background-color: rgb(25, 47, 68);
+}
+#n-btn{
+    background-color: rgb(254, 235, 97);
+}
+#offcanvasNavbar{
+    background-color: rgb(25, 47, 68);
+}
+#brand img{
+    width: 40px;
+}
+
+#package{
+    width: 350px;
+    height:340px;
+    border-radius: 10px;
+} 
+/* banner */
+#image{
+    width:100%;
+} 
+#img1{
+    width:100%;
+    height: 220px;
+    border-radius:10px;
+}
+.c-container-plan{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.c-container-plan a{
+    background-color: rgb(236, 234, 234);
+}
+.c-container-plan a:hover{
+    background-color: rgb(236, 234, 234);
+    transform: scale(1.02);
+    box-shadow: 0 0 10px #6e6e6e;
+}
+.grid-inner-content{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* footer */
+.footer{
+    background-color:rgb(25, 47, 68);
+}
+#first-grid{
+    margin: auto;
+}
+#fourth-grid{
+    padding-top: 47px;
+}
+#fifth-grid{
+    background-color: rgb(125, 173, 63);
+    display: flex;
+    justify-content: center;
+}
+#first-grid img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#first-grid h5{
+    text-align: center;
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* responsive css */
+
+@media screen and (max-width:990px)
+{
+    #menu-logo
+    {
+        width:40px;
+    }
+     /* footer */
+     #first-grid img
+     {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #first-grid h5
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:555px) 
+{
+     /* navbar */
+     #brand img
+     {
+        width: 35px;
+    }
+    #menu-btn
+    {
+        border:none;
+    }
+    #menu-btn span
+    {
+        width: 25px;
+    }
+    
+    /* offcanvas menu */
+    #offcanvasNavbar
+    {
+        width: 300px;
+    }
+    #menu-logo
+    {
+        width:35px
+    }
+       /* footer */
+       #footer-grid
+       {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    #first-grid
+    {
+        width: auto;
+        margin-top: 15px;
+    }
+    #second-grid
+    {
+        width: auto;
+    }
+    #footer-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first-grid{
+        grid-column: 1/3;
+    }
+    #fourth-grid
+    {
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding-top: px;
+    }
+    #fifth-grid
+    {
+        grid-column: 1/3;
+    }
+}
+@media screen and (max-width:850px) 
+{
+    .grid-plan:nth-child(1)
+    {
+        grid-column: 1/5;
+    }
+    .grid-plan:nth-child(2)
+    {
+        grid-column: 1/5;
+    }
+    .grid-plan:nth-child(3)
+    {
+        grid-column: 1/5;
+    }
+    .grid-plan:nth-child(4)
+    {
+        grid-column: 1/5;
+    }
+    .grids
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid-inner-content
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #package
+    {
+        width: 50%;
+        height: 100%;
+    }
+    #img1
+    {
+        height: 250px; 
+    }
+    .c-container-plan a
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:430px) 
+{
+       /* navbar */
+    nav
+    {
+        height: 60px;
+        width: 100%;
+    }
+    #brand
+    {
+        font-size: 18px;
+    }
+    #brand img
+    {
+        width: 30px;
+    }
+    /* footer */
+    #footer-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 10px;
+        width: 100%;
+    }
+    #first-grid{
+        margin: auto;
+        width: 100vw;
+    }
+    #second-grid{
+        margin: auto;
+        width: 50vw;
+    }
+    #third-grid{
+        margin: auto;
+        width: 50vw;
+    }
+    
+    #fourth-grid
+    {
+        text-align: center;
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        font-size: 10px;
+        width: 100vw;
+    }
+    #fifth-grid
+    {
+        grid-column: 1/3;
+        font-size: 10px;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="brand">
+            <img src="Assets/island_hopping/images/TravelAndToursPH.png" alt="Logo" class="d-inline-block align-text-top rounded-3"/>
+            Travel and Tours PH
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" id="menu-btn">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- offcanvas -->
+          <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <img src="Assets/images/TravelAndToursPH.png" alt="logo" id="menu-logo" class="d-inline-block align-text-top rounded-3">
+                <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"> Travel and Tours PH</h5>
+                <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="bi bi-x-lg text-white"></span></button>
+            </div>
+
+            <div class="offcanvas-body" >
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Destination
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Luzon.html">Luzon</a></li>
+                      <li><a class="dropdown-item" href="Visayas.html">Visayas</a></li>
+                      <li><a class="dropdown-item" href="mindanao.html">Mindanao</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="island_hopping.html">Island Tour</a></li>
+                        <li><a class="dropdown-item" href="activities.html">Activites</a></li>
+                        <li><a class="dropdown-item" href="#">Accomodations</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+            <!-- plan activities cards -->
+            <div>
+                <img src="Assets/images/luzon/banner1.jpg" alt="" id="image">
+            </div><br><br>
+        
+                    <!-- plan activities cards -->
+            <div class="container-md c-container-plan">
+                 <!-- nth:child 1 / Rizal Park -->
+              <a href="#" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/images/luzon/rizal-park.jpeg" alt="" id="img1" />
+                              </td>
+                              <td class="p-3">
+                                  <h5><b>Rizal Park <br>(Manila)</b></h5><hr>
+                                  <p style="text-align: justify;">Still widely known as 'Luneta' (its name until the 1950s).</p>
+                                  <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 2 / Fort Santiago -->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/images/luzon/fort-santiago.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Fort Santiago <br>(Manila)</b></h5><hr>
+                                  <p style="text-align: justify;">Fort Santiago is one of the oldest fortifications in Manila.</p>
+                                  <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 3 / Intramuros -->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/images/luzon/intramuros.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Intramuros <br>(Manila)</b></h5><hr>
+                                  <p style="text-align: justify;">Intramuros, "The Walled City," is the oldest district in Manila.</p>
+                                  <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 4 / Manila Ocean Park -->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/images/luzon/ocean-park.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Manila Ocean Park <br>(Manila)</b></h5><hr>
+                                  <p style="text-align: justify;">has finally evolved into Metro's Holiday Destination.</p>
+                                  <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+          </div><br>
+          <div class="container-md c-container-plan">
+        
+        <!-- nth:child 5 / National Museum -->
+            <a href="#" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/images/luzon/national-museum.jpg" alt="" id="img1" />
+                            </td>
+                            <td class="p-3">
+                                <h5><b>National Museum <br>(Manila)</b></h5><hr>
+                                <p style="text-align: justify;">The National Museum of the Philippines is located near Rizal Park. </p>
+                                <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 6 / Baguio -->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/images/luzon/baguio.jpg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Baguio City <br>(Benguet)</b></h5><hr>
+                                <p style="text-align: justify;">Baguio used to be a vast mountain zone with lush highland forests.</p>
+                                <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 7 / Vigan -->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/images/luzon/vigan.jpeg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Vigan City<br> (Ilocos Sur)</b></h5><hr>
+                                <p style="text-align: justify;">Vigan is a city in the Philippines, on the west coast of Luzon island.</p>
+                                <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 8 /  Mayon Volcano-->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/images/luzon/mayon-volcano.jpg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Mayon Volcano <br> (Albay)</b></h5><hr>
+                                <p style="text-align: justify;">Mayon is a classic stratovolcano with a small central summit crater.</p>
+                                <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div><br>
+    
+    <!-- packages -->
+    <div id="carousel-promo" class="carousel slide text-dark text-center container-md rounded">
+        <div class="carousel-inner bg-secondary-subtle rounded">
+            <!-- Intramuros -->
+            <div class="carousel-item active">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/luzon/promo_intramuros.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Intramuros Now!</h1>
+                                    <p>The historical tour will narrate the story of the city and key happenings to the Philippines for more than 400 years. Compressed into less than 4-hour historical tour is the evolution of this place from being Malay to Muslim, to Spanish, to American, to Japanese to being a Filipino. Best if you want to know the general history of Manila and Philippines.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Baguios -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/luzon/promo_baguio.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Baguio Now!</h1>
+                                    <p>Known as the summer capital of the Philippines, Baguio remains a must-visit tourist destination in the country through the years. The cool breeze makes it a perfect place to hang out during hot months. In fact, more tourists are coming over to the City of Pines every summer season.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Vigan -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/luzon/promo_vigan.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Vigan Now!</h1>
+                                    <p>Vigan is a historical place. Just walking around the cobblestone streets around Calle Crisologo, or even better, taking a ride in a horse drawn carriage will take you back to the Spanish era of the Philippines.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Hundred Islands -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/images/luzon/promo_hundred_island.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Hundred Islands Now!</h1>
+                                    <p>Only 5 hours away from Manila, the 100 islands tour is one of the nicer getaways from the city. Day tours are not ideal, and it’s better to book an overnight package.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>    
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-promo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-promo" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div><br><br><br>
+
+    <!-- footer -->
+    <div class="container-fluid footer" id="footer">
+        <div class="row" id="footer-grid">
+            <div class="col-3 text-white" id="first-grid">
+                <img src="Assets/images/TravelAndToursPH.png" alt="Logo" width="90" height="90" class="rounded-4">
+                <h5>Travel and Tours PH</h5>
+            </div>
+            <div class="col-3 text-white p-5" id="second-grid">
+                <h5><b>Browse</b></h5>
+                <li><a href="#" class=" text-white text-decoration-none">Destination</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">About</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Hotels</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Others</a></li>
+            </div>
+            <div class="col-3 text-white p-5" id="third-grid">
+                <h5><b>Activities</b></h5>
+                <li><a href="#" class=" text-white text-decoration-none">Hiking</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Diving</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Surfing</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Kayaking</a></li>
+            </div>
+            <div class="col-3 text-white" id="fourth-grid"> 
+                <h5><b>Contact</b></h5>
+                <a href="#" class="text-white"><span class="bi bi-facebook "></span></a>
+                <a href="#" class="text-white"><span class="bi bi-messenger "></span></a>
+                <a href="#" class="text-white"><span class="bi bi-linkedin "></span></a>
+            </div>
+            <div class="col text-white" id="fifth-grid">
+                <p><span>&#169;</span> Copyright 2023</p>
+                
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var nav = document.querySelector('nav');
+    
+            window.addEventListener('scroll', function()
+            {
+                if(window.pageYOffset > 100){
+                    nav.classList.add('bg-dark','shadow');
+                } else{
+                    nav.classList.remove('bg-dark','shadow');
+                }
+            });
+        </script>
+    </body>
+    </html>

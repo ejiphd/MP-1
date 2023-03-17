@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindanao</title>
+    <link rel="stylesheet" href="Assets/mindanao/mindanao.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top container-fluid">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" id="brand">
+            <img src="Assets/island_hopping/images/TravelAndToursPH.png" alt="Logo" class="d-inline-block align-text-top rounded-3"/>
+            Travel and Tours PH
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" id="menu-btn">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- offcanvas -->
+          <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <img src="Assets/images/TravelAndToursPH.png" alt="logo" id="menu-logo" class="d-inline-block align-text-top rounded-3">
+                <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"> Travel and Tours PH</h5>
+                <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="bi bi-x-lg text-white"></span></button>
+            </div>
+
+            <div class="offcanvas-body" >
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Destination
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Luzon.html">Luzon</a></li>
+                      <li><a class="dropdown-item" href="Visayas.html">Visayas</a></li>
+                      <li><a class="dropdown-item" href="mindanao.html">Mindanao</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="island_hopping.html">Island Tour</a></li>
+                        <li><a class="dropdown-item" href="activities.html">Activites</a></li>
+                        <li><a class="dropdown-item" href="#">Accomodations</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+            <!-- plan activities cards -->
+            <div>
+                <img src="Assets/mindanao/image/banner.jpg" alt="" id="image">
+            </div><br><br>
+        
+                    <!-- plan activities cards -->
+            <div class="container-md c-container-plan">
+                 <!-- nth:child 1 / Cloud 9 Surfing Tower (Siargao -->
+              <a href="#" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/mindanao/image/siargao_img.jpeg" alt="" id="img1" />
+                              </td>
+                              <td class="p-3">
+                                  <h5><b>Cloud 9 Surfing Tower (Siargao) </b></h5><hr>
+                                  <p style="text-align: justify;">Cloud 9 - one of the well-known waves in the world and best in the Philippines. </p>
+                                  <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 2 / Hinatuan Enchanted River (Surigao del Sur)-->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/mindanao/image/surigao_Del_sur.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Enchanted River <br>(Surigao del Sur) </b></h5><hr>
+                                  <p style="text-align: justify;"> The Hinatuan Enchanted River is a river that flows into the Pacific Ocean. </p>
+                                  <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 3 / Whitewater Rafting (Cagayan de Oro) -->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/mindanao/image/cagayan_de_oro.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Whitewater Rafting (Cagayan de Oro) </b></h5><hr>
+                                  <p style="text-align: justify;"> Kick-off your adrenaline rush in CDO with whitewater rafting at the Cagayan River. </p>
+                                  <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+              <!-- nth:child 4 / Maria Cristina Falls-->
+              <a href="" class="btn grid-plan">
+                  <table>
+                      <tbody>
+                          <tr class="grid-inner-content">
+                              <td>
+                                  <img src="Assets/mindanao/image/iligan_city.jpg" alt="" id="img1"/>
+                              </td>
+                              <td class="p-3">
+                                <h5><b>Maria Cristina Falls <br>( Iligan City) </b></h5><hr>
+                                  <p style="text-align: justify;">The star landmark known as ‘the City of Majestic Waterfalls’. </p>
+                                  <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </a>
+          </div><br>
+          <div class="container-md c-container-plan">
+        
+        <!-- nth:child 5 / Mount Apo -->
+            <a href="#" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/mindanao/image/mt_apo.jpg" alt="" id="img1" />
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Mount Apo <br>(Island of Mindanao) </b></h5><hr>
+                                <p style="text-align: justify;"> This is the highest mountain in the Philippines. </p>
+                                <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 6 / Tinago Falls -->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/mindanao/image/tinago_falls.jpg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Tinago Falls <br>(Iligan City) </b></h5><hr>
+                                <p style="text-align: justify;"> A getaway deep within the jungles of Mindanao. </p>
+                                <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 7 / Tinuy-an Falls -->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/mindanao/image/tinuy_an_falls.jpg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Tinuy-an Falls <br>(Bislig) </b></h5><hr>
+                                <p style="text-align: justify;"> Known as the little Niagara Falls of the Philippines. </p>
+                                <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+            <!-- nth:child 8 /  Lake Sebu (Cotabato)-->
+            <a href="" class="btn grid-plan">
+                <table>
+                    <tbody>
+                        <tr class="grid-inner-content">
+                            <td>
+                                <img src="Assets/island_hopping/images/Camiguin.jpg" alt="" id="img1"/>
+                            </td>
+                            <td class="p-3">
+                                <h5><b>Lake Sebu <br> (Cotabato) </b></h5><hr>
+                                <p style="text-align: justify;">One of the most popular places in South Cotabato.</p>
+                                <p style="color: rgb(125, 173, 63);">View All Places <span class="bi bi-arrow-bar-right"></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </a>
+        </div><br>
+    
+    <!-- packages -->
+    <div id="carousel-promo" class="carousel slide text-dark text-center container-md rounded">
+        <div class="carousel-inner bg-secondary-subtle rounded">
+            <!-- Siargao -->
+            <div class="carousel-item active">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/mindanao/image/promo_siargao.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Siargao Now!</h1>
+                                    <p>Siargao is a tear-drop shaped island in the Philippine Sea situated 800 kilometers southeast of Manila in the province of Surigao del Norte. </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Surigao del Sur -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/mindanao/image/promo_surigao_del_sur.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Surigao del Sur Now!</h1>
+                                    <p>The City of Surigao nestles along the northernmost tip in Province of Surigao del Norte. </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Cagayan de Oro -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/mindanao/image/promo_cagayan_de_oro.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Cagayan de Oro Now!</h1>
+                                    <p>Cagayan de Oro, abbreviated CDO, CDOC, CdeO or Cag. de Oro is known as the "City of Golden Friendship".</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Iligan City -->
+            <div class="carousel-item ">
+                <div class="text-center rounded ">
+                    <table>
+                        <tbody>
+                            <tr class="grids">
+                                <td>
+                                    <img src="Assets/mindanao/image/promo_iligan_city.jpg" alt="" id="package"/>
+                                </td>
+                                <td>
+                                    <h1>Visit Iligan City Now!</h1>
+                                    <p> It was the earliest pre-Spanish settlement of native sea dwellers. </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-promo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-promo" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div><br><br><br>
+
+     <!-- footer -->
+ <div class="container-fluid footer" id="footer">
+    <div class="row" id="footer-grid">
+        <div class="col-3 text-white" id="first-grid">
+            <img src="Assets/images/TravelAndToursPH.png" alt="Logo" width="90" height="90" class="rounded-4">
+            <h5>Travel and Tours PH</h5>
+        </div>
+        <div class="col-3 text-white p-5" id="second-grid">
+            <h5><b>Browse</b></h5>
+            <li><a href="#" class=" text-white text-decoration-none">Destination</a></li>
+            <li><a href="#" class=" text-white text-decoration-none">About</a></li>
+            <li><a href="#" class=" text-white text-decoration-none">Hotels</a></li>
+            <li><a href="#" class=" text-white text-decoration-none">Others</a></li>
+        </div>
+        <div class="col-3 text-white p-5" id="third-grid">
+            <h5><b>Activities</b></h5>
+            <li><a href="#" class=" text-white text-decoration-none">Hiking</a></li>
+            <li><a href="#" class=" text-white text-decoration-none">Diving</a></li>
+            <li><a href="#" class=" text-white text-decoration-none">Surfing</a></li>
+            <li><a href="#" class=" text-white text-decoration-none">Kayaking</a></li>
+        </div>
+        <div class="col-3 text-white" id="fourth-grid"> 
+            <h5><b>Contact</b></h5>
+            <a href="#" class="text-white"><span class="bi bi-facebook "></span></a>
+            <a href="#" class="text-white"><span class="bi bi-messenger "></span></a>
+            <a href="#" class="text-white"><span class="bi bi-linkedin "></span></a>
+        </div>
+        <div class="col text-white" id="fifth-grid">
+            <p><span>&#169;</span> Copyright 2023</p>
+            
+        </div>
+    </div>
+ </div>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var nav = document.querySelector('nav');
+    
+            window.addEventListener('scroll', function(){
+                if(window.pageYOffset > 100){
+                    nav.classList.add('bg-dark','shadow');
+                } else{
+                    nav.classList.remove('bg-dark','shadow');
+                }
+            });
+        </script>
+    </body>
+    </html>
