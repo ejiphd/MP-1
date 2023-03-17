@@ -300,6 +300,7 @@ nav{
        width: 100vw; 
     }
     #about h1{
+        margin-top: 10px;
         text-align: center;
         width: 100vw;
         font-size: 30px;
