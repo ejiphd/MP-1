@@ -300,9 +300,11 @@ nav{
     }
     #about h1{
         text-align: center;
+        width: 100vw;
     }
     #about p{
         text-align: justify;
+        width: 100vw;
     }
     /* footer */
     #footer-grid
