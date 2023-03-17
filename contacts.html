@@ -1,1 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visayas</title>
 
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- fontawesome-icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+
+
+   /* navigation */
+nav{
+    background-color: rgba(25, 47, 68,0.493);
+}
+.nav-scrolled{ /*this applies on the js*/
+    background-color: rgb(25, 47, 68);
+}
+#n-btn{
+    background-color: rgb(254, 235, 97);
+}
+#offcanvasNavbar{
+    background-color: rgb(25, 47, 68);
+}
+#brand img{
+    width: 40px;
+}
+
+#package{
+    width: 350px;
+    height:340px;
+    border-radius: 10px;
+} 
+
+/* -- ----------------------------------------- Contact -------------------------------------------- -- */
+.contact-left{
+    flex-basis: 50%;
+}
+.contact-right{
+    flex-basis: 50%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ffc400f5;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(25, 47, 68);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: rgb(125, 173, 63);
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: rgb(25, 47, 68);
+    color: #fff;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(25, 47, 68);
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* footer */
+.footer{
+    background-color:rgb(25, 47, 68);
+    width: 100vw;
+}
+#first-grid{
+    margin: auto;
+}
+#fourth-grid{
+    padding-top: 47px;
+}
+#fifth-grid{
+    background-color: rgb(125, 173, 63);
+    display: flex;
+    justify-content: center;
+}
+#first-grid img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#first-grid h5{
+    text-align: center;
+}
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* responsive css */
+
+@media screen and (max-width:990px)
+{
+    #menu-logo
+    {
+        width:40px;
+    }
+     /* footer */
+     #first-grid img
+     {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #first-grid h5
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:555px) 
+{
+     /* navbar */
+     #brand img
+     {
+        width: 35px;
+    }
+    #menu-btn
+    {
+        border:none;
+    }
+    #menu-btn span
+    {
+        width: 25px;
+    }
+    
+    /* offcanvas menu */
+    #offcanvasNavbar
+    {
+        width: 300px;
+    }
+    #menu-logo
+    {
+        width:35px
+    }
+       /* footer */
+       #footer-grid
+       {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    #first-grid
+    {
+        width: auto;
+        margin-top: 15px;
+    }
+    #second-grid
+    {
+        width: auto;
+    }
+    #footer-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first-grid{
+        grid-column: 1/3;
+    }
+    #fourth-grid
+    {
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        padding-top: px;
+    }
+    #fifth-grid
+    {
+        grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width:430px) 
+{
+       /* navbar */
+    nav
+    {
+        height: 60px;
+        width: 100%;
+    }
+    #brand
+    {
+        font-size: 18px;
+    }
+    #brand img
+    {
+        width: 30px;
+    }
+    /* footer */
+    #footer-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #first-grid
+    {
+        grid-column: 1/3;
+    }
+    #fourth-grid
+    {
+        grid-column: 1/3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    #fifth-grid
+    {
+        grid-column: 1/3;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark  container-fluid" style="background-color: rgb(25, 47, 68);">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="brand">
+            <img src="Assets/island_hopping/images/TravelAndToursPH.png" alt="Logo" class="d-inline-block align-text-top rounded-3"/>
+            Travel and Tours PH
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" id="menu-btn">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- offcanvas -->
+          <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <img src="Assets/images/TravelAndToursPH.png" alt="logo" id="menu-logo" class="d-inline-block align-text-top rounded-3">
+                <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel"> Travel and Tours PH</h5>
+                <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close"><span class="bi bi-x-lg text-white"></span></button>
+            </div>
+
+            <div class="offcanvas-body" >
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 justify-content-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Destination
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="Luzon.html">Luzon</a></li>
+                      <li><a class="dropdown-item" href="Visayas.html">Visayas</a></li>
+                      <li><a class="dropdown-item" href="mindanao.html">Mindanao</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="island_hopping.html">Island Tour</a></li>
+                        <li><a class="dropdown-item" href="#">Activites</a></li>
+                        <li><a class="dropdown-item" href="#">Accomodations</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Contact Us</a>
+                </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+            
+        
+        <!-- ---------------------------------- Contact Form ---------------------------------------------------- -->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p style="text-align: justify;">Email us with any question or inquires or call 0999-088-0882. We could happy to answer your question and set up and appointment with you about our promo and services.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <form name="submit-to-google-sheet">
+                        <input type="Text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>           
+                <div class="contact-right">
+                    <img src="Assets/images/LOGO.jpeg" alt="" style="height: 100%; width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- footer -->
+    <div class="navbar-expand-lg container-fluid footer" id="footer" >
+        <div class="row" id="footer-grid">
+            <div class="col-3 text-white" id="first-grid">
+                <img src="Assets/images/TravelAndToursPH.png" alt="Logo" width="90" height="90" class="rounded-4">
+                <h5>Travel and Tours PH</h5>
+            </div>
+            <div class="col-3 text-white p-5" id="second-grid">
+                <h5><b>Browse</b></h5>
+                <li><a href="#" class=" text-white text-decoration-none">Destination</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">About</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Hotels</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Others</a></li>
+            </div>
+            <div class="col-3 text-white p-5" id="third-grid">
+                <h5><b>Activities</b></h5>
+                <li><a href="#" class=" text-white text-decoration-none">Hiking</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Diving</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Surfing</a></li>
+                <li><a href="#" class=" text-white text-decoration-none">Kayaking</a></li>
+            </div>
+            <div class="col-3 text-white" id="fourth-grid"> 
+                <h5><b>Contact</b></h5>
+                <a href="#" class="text-white"><span class="bi bi-facebook "></span></a>
+                <a href="#" class="text-white"><span class="bi bi-messenger "></span></a>
+                <a href="#" class="text-white"><span class="bi bi-linkedin "></span></a>
+            </div>
+            <div class="col text-white" id="fifth-grid">
+                <p><span>&#169;</span> Copyright 2023</p>
+                
+            </div>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var nav = document.querySelector('nav');
+    
+            window.addEventListener('scroll', function(){
+                if(window.pageYOffset > 100){
+                    nav.classList.add('bg-dark','shadow');
+                } else{
+                    nav.classList.remove('bg-dark','shadow');
+                }
+            });
+        </script>
+    </body>
+    </html>
