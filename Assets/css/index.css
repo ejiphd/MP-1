@@ -297,18 +297,18 @@ nav{
     
     /* about */
     #about{
-       width: 100vw; 
+       width: 70vw; 
     }
     #about h1{
-        margin-top: 10px;
+        margin-top: 5px;
         text-align: center;
-        width: 100vw;
-        font-size: 30px;
+        width: 80vw;
+       
     }
     #about p{
         text-align: justify;
-        width: 100vw;
-        font-size: 10px;
+        width: 80vw;
+        font-size: 15px;
     }
     /* footer */
     #footer-grid
